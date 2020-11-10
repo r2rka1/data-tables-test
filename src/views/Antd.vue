@@ -90,7 +90,47 @@ export default {
   data() {
     return {
       dataSet: [],
-      columns
+      columns:[
+        {
+          title: 'Categories',
+          dataIndex: 'category',
+          key: 'category',
+          fixed: 'left',
+          width: 200,
+        },
+        {
+          title: 'Subcategories',
+          dataIndex: 'subcategory',
+          key: 'subcategory',
+          fixed: 'left',
+          width: 200,
+        },
+        {
+          title: 'Suppliers',
+          dataIndex: 'vendor',
+          key: 'vendor',
+          width: 100,
+        },
+        {
+          title: 'Spend',
+          key: 'spend',
+          dataIndex: 'spend',
+          width: 100,
+        },
+        {
+          title: 'Variance',
+          key: 'variance',
+          dataIndex: 'variance',
+          width: 100,
+        },
+        {
+          title: 'operation',
+          dataIndex: 'operation',
+          width: 100,
+          fixed: 'right',
+          scopedSlots: { customRender: 'operation' },
+        },
+      ]
     }
   },
   computed: {
