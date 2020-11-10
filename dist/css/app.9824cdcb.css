@@ -1,1 +1,0 @@
-.header{display:flex;flex-flow:row;align-items:center;justify-content:flex-start;padding:10px}.header button{margin-right:20px}.view{padding:20px;height:100%;display:flex;flex-flow:column;align-items:center;justify-content:center}.my-table,.view{width:100%}.my-row td{border:1px solid #d3d3d3;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.table-view{width:100%}
