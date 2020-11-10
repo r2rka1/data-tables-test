@@ -24,7 +24,7 @@
     <a-button class="editable-add-btn" @click="handleAdd">
       Add
     </a-button>
-    <a-table :components="components" bordered :scroll="{ x: 1100, y: 300 }" :columns="columns" :data-source="dataSet">
+    <a-table bordered :scroll="{ x: 1100, y: 300 }" :columns="columns" :data-source="dataSet">
       <template slot="name" slot-scope="text, record">
         <editable-cell :text="text" @change="onCellChange(record.key, 'category', $event)" />
       </template>
