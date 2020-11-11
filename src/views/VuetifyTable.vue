@@ -2,7 +2,7 @@
   <div class="table-view">
     <div class="table-view">
       <h1>VUETIFY</h1>
-      <a target="_blank" src="https://vuetifyjs.com/en/components/data-tables/#external-pagination">DOCS</a>
+      <a target="_blank" href="https://vuetifyjs.com/en/components/data-tables/#external-pagination">DOCS</a>
       <div></div>
       <v-data-table
           show-select

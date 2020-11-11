@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>ELEMENT-UI</h1>
-    <a target="_blank" src="https://element.eleme.io/#/en-US/component/table#table">DOCS</a>
+    <a target="_blank" href="https://element.eleme.io/#/en-US/component/table#table">DOCS</a>
     <div style="width: 800px;">
       <el-table class="v-my-table" :data="dataSet" border stripe max-height="600"
                 ref="multipleTable" @selection-change="handleSelectionChange">

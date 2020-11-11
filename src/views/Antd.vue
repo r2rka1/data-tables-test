@@ -1,7 +1,7 @@
 <template>
   <div class="table-view" style="width: 800px">
     <h1>ANT-D</h1>
-    <a target="_blank" src="https://antdv.com/components/table/">DOCS</a>
+    <a target="_blank" href="https://antdv.com/components/table/">DOCS</a>
     <a-button class="editable-add-btn" @click="handleAdd">
       Add
     </a-button>

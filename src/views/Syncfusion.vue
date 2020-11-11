@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>SYNCFUSION</h1>
-    <a target="_blank" src="https://ej2.syncfusion.com/vue/demos/#/material/grid/grid-overview.html">DOCS</a>
+    <a target="_blank" href="https://ej2.syncfusion.com/vue/demos/#/material/grid/grid-overview.html">DOCS</a>
     <div style="width: 800px">
       <div style="width: 800px">
         <ejs-grid :pageSettings="pageSettings" :selectionSettings="selectOptions"  :dataSource="data" height='400' :frozenRows='rows' :frozenColumns='columns' :allowSelection='false' :enableHover='false' :allowResizing='true' :allowSorting='true' :allowMultiSorting='false' :allowPaging='true'>
