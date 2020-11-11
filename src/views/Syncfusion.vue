@@ -4,10 +4,18 @@
     <a target="_blank" href="https://ej2.syncfusion.com/vue/demos/#/material/grid/grid-overview.html">DOCS</a>
     <div style="width: 800px">
       <div style="width: 800px">
-        <ejs-grid :pageSettings="pageSettings" :selectionSettings="selectOptions"  :dataSource="data" height='400' :frozenRows='rows' :frozenColumns='columns' :allowSelection='false' :enableHover='false' :allowResizing='true' :allowSorting='true' :allowMultiSorting='false' :allowPaging='true'>
+        <ejs-grid
+            :pageSettings="pageSettings"
+            :selectionSettings="selectOptions"
+            :dataSource="data" height='400'
+            :frozenRows='rows'
+            :editSettings='editSettings'
+            :toolbar='toolbar'
+            :frozenColumns='columns'
+            :allowSelection='true' :allowResizing='true' :allowSorting='true' :allowMultiSorting='true' :allowPaging='true'>
           <e-columns>
             <e-column type='checkbox' width='50'></e-column>
-            <e-column field='category' headerText='Category' width='200' textAlign='Left'></e-column>
+            <e-column field='category' isPrimaryKey='true' headerText='Category' width='200' textAlign='Left'></e-column>
             <e-column field='subcategory' headerText='Subcategory' width='250' textAlign='Left'></e-column>
             <e-column field='vendor' headerText='Supplier' width='120' textAlign='Left'></e-column>
             <e-column field='spend' headerText='Spend' width='125' textAlign='Right'></e-column>
@@ -42,7 +50,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import { GridPlugin, Freeze, Resize, Sort, Page, Edit, Toolbar } from "@syncfusion/ej2-vue-grids";
 import { Browser } from '@syncfusion/ej2-base';
