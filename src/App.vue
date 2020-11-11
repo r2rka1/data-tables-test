@@ -17,6 +17,11 @@
               elevation="2"
           >Element UI</v-btn>
         </router-link>
+        <router-link to="/syncfusion">
+          <v-btn
+              elevation="2"
+          >Syncfusion</v-btn>
+        </router-link>
       </div>
       <div class="view">
         <router-view></router-view>

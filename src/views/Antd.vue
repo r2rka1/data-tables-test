@@ -2,6 +2,23 @@
   <div class="table-view" style="width: 800px">
     <h1>ANT-D</h1>
     <a target="_blank" src="https://antdv.com/components/table/">DOCS</a>
+    <a-button class="editable-add-btn" @click="handleAdd">
+      Add
+    </a-button>
+    <a-table bordered :scroll="{ x: 1100, y: 300 }" :columns="columns" :data-source="dataSet">
+      <template slot="name" slot-scope="text, record">
+        <editable-cell :text="text" @change="onCellChange(record.key, 'category', $event)" />
+      </template>
+      <template slot="operation" slot-scope="text, record">
+        <a-popconfirm
+            v-if="dataSet.length"
+            title="Sure to delete?"
+            @confirm="() => onDelete(record.category)"
+        >
+          <a href="javascript:;">Delete</a>
+        </a-popconfirm>
+      </template>
+    </a-table>
     <h1>pros</h1>
     <ul>
       <li>Expandable rows advanced (trees)</li>
@@ -21,23 +38,6 @@
         Pretty poor approach</li>
       <li>No built-in checkbox support</li>
     </ul>
-    <a-button class="editable-add-btn" @click="handleAdd">
-      Add
-    </a-button>
-    <a-table bordered :scroll="{ x: 1100, y: 300 }" :columns="columns" :data-source="dataSet">
-      <template slot="name" slot-scope="text, record">
-        <editable-cell :text="text" @change="onCellChange(record.key, 'category', $event)" />
-      </template>
-      <template slot="operation" slot-scope="text, record">
-        <a-popconfirm
-            v-if="dataSet.length"
-            title="Sure to delete?"
-            @confirm="() => onDelete(record.category)"
-        >
-          <a href="javascript:;">Delete</a>
-        </a-popconfirm>
-      </template>
-    </a-table>
   </div>
 </template>
 

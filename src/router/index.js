@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import VuetifyTable from "@/views/VuetifyTable";
 import Antd from "@/views/Antd";
 import VueDataTables from "@/views/VueDataTables";
+import Syncfusion from "@/views/Syncfusion";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/element-ui',
     name: 'element-ui',
     component: VueDataTables
+  },
+  {
+    path: '/syncfusion',
+    name: 'Syncfusion',
+    component: Syncfusion
   },
   {
     path: '/about',

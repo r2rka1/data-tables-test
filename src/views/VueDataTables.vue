@@ -1,29 +1,8 @@
 <template>
-  <div class="view">
+  <div>
     <h1>ELEMENT-UI</h1>
     <a target="_blank" src="https://element.eleme.io/#/en-US/component/table#table">DOCS</a>
-    <h1>pros</h1>
-    <ul>
-      <li>Expandable rows</li>
-      <li>Easy CRUD actions (edit deletee add)</li>
-      <li>Big component library asset</li>
-      <li>Built-in sorting, pagination, sort (supports both FE and BE), jump to page</li>
-      <li>Good approach to reach invite scrolling</li>
-      <li>Advanced fixed columns and rows</li>
-      <li>Support of Fixed Headers</li>
-      <li>Support of slots and custom components in table cells</li>
-      <li>Good support of column resizing</li>
-      <li>Complete framework. Each component can be imported separately</li>
-      <li>Ease of use</li>
-      <li>Good documentations</li>
-      <li>Built-in checkbox support</li>
-      <li>Custom Colspan, RowSpan, Summary Rows and many other features (check docs)</li>
-    </ul>
-    <h1>cons</h1>
-    <ul>
-      <li>No cons...</li>
-    </ul>
-    <div class="view" style="width: 800px;">
+    <div style="width: 800px;">
       <el-table class="v-my-table" :data="dataSet" border stripe max-height="600"
                 ref="multipleTable" @selection-change="handleSelectionChange">
         <el-table-column type="expand" fixed="left">
@@ -55,6 +34,27 @@
         </el-table-column>
       </el-table>
     </div>
+    <h1>pros</h1>
+    <ul>
+      <li>Expandable rows</li>
+      <li>Easy CRUD actions (edit deletee add)</li>
+      <li>Big component library asset</li>
+      <li>Built-in sorting, pagination, sort (supports both FE and BE), jump to page</li>
+      <li>Good approach to reach invite scrolling</li>
+      <li>Advanced fixed columns and rows</li>
+      <li>Support of Fixed Headers</li>
+      <li>Support of slots and custom components in table cells</li>
+      <li>Good support of column resizing</li>
+      <li>Complete framework. Each component can be imported separately</li>
+      <li>Ease of use</li>
+      <li>Good documentations</li>
+      <li>Built-in checkbox support</li>
+      <li>Custom Colspan, RowSpan, Summary Rows and many other features (check docs)</li>
+    </ul>
+    <h1>cons</h1>
+    <ul>
+      <li>No cons...</li>
+    </ul>
   </div>
 </template>
 
