@@ -3,8 +3,8 @@
     <h1>SYNCFUSION</h1>
     <a target="_blank" src="https://ej2.syncfusion.com/vue/demos/#/material/grid/grid-overview.html">DOCS</a>
     <div style="width: 800px">
-      <div class="col-lg-8" style="width: 800px">
-        <ejs-grid :pageSettings="pageSettings" :selectionSettings="selectOptions"  :dataSource="data" height='350' :frozenRows='rows' :frozenColumns='columns' :allowSelection='false' :enableHover='false' :allowResizing='true' :allowSorting='true' :allowMultiSorting='false' :allowPaging='true'>
+      <div style="width: 800px">
+        <ejs-grid :pageSettings="pageSettings" :selectionSettings="selectOptions"  :dataSource="data" height='400' :frozenRows='rows' :frozenColumns='columns' :allowSelection='false' :enableHover='false' :allowResizing='true' :allowSorting='true' :allowMultiSorting='false' :allowPaging='true'>
           <e-columns>
             <e-column type='checkbox' width='50'></e-column>
             <e-column field='category' headerText='Category' width='200' textAlign='Left'></e-column>
