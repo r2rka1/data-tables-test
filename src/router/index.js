@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import VuetifyTable from "@/views/VuetifyTable";
 import Antd from "@/views/Antd";
+import VueDataTables from "@/views/VueDataTables";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/antd',
     name: 'antd',
     component: Antd
+  },
+  {
+    path: '/element-ui',
+    name: 'element-ui',
+    component: VueDataTables
   },
   {
     path: '/about',

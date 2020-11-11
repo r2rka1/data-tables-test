@@ -1,6 +1,6 @@
-export default () => {
+export default (amount = 50) => {
   const dataSet = []
-  for (let i = 1; i < 50; i++ ) {
+  for (let i = 1; i < amount; i++ ) {
     dataSet.push({
       key: i+1000,
       category: "Category Name" + i,

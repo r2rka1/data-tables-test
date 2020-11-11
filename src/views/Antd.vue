@@ -9,9 +9,6 @@
       <li>Big component library asset</li>
       <li>Built-in sorting, pagination, sort (supports both FE and BE), jump to page</li>
       <li>Advanced fixed columns and rows</li>
-      <li>Built-in loading state (see docs)</li>
-      <li>Support for row selection (checkboxes)</li>
-      <li>Support resizable columns using extra plugin (vue-draggable-resizable)</li>
       <li>Support of Fixed Headers</li>
       <li>Support of slots and custom components in table cells</li>
     </ul>
@@ -19,6 +16,9 @@
     <ul>
       <li>Complete framework (will require integration)</li>
       <li>Resizable columns is an external package and kind not so easy to implement. But it works much better in docs</li>
+      <li>Support resizable columns using extra plugin (vue-draggable-resizable).
+        Couldn't even get it running in bounds of one hour.
+        Pretty poor approach</li>
       <li>No built-in checkbox support</li>
     </ul>
     <a-button class="editable-add-btn" @click="handleAdd">

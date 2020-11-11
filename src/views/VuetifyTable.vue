@@ -21,7 +21,7 @@
       <h1>cons</h1>
       <ul>
         <li>Complete framework (will require integration)</li>
-        <li>Resizable columns is an external package</li>
+        <li>Resizable columns is an external package. Implementation is at avarage level (resize drops on any action, some bugs on first rresize actions)</li>
       </ul>
     </div>
     <v-data-table

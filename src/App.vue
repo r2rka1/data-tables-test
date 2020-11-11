@@ -12,6 +12,11 @@
               elevation="2"
           >Antd</v-btn>
         </router-link>
+        <router-link to="/element-ui">
+          <v-btn
+              elevation="2"
+          >Element UI</v-btn>
+        </router-link>
       </div>
       <div class="view">
         <router-view></router-view>
